@@ -17,7 +17,7 @@
             <!-- brand -->
             <a href="#" class="navbar-brand">
                 <div class="d-flex  align-items-center">
-                    <img src="./logo.png" alt="AnimalZ" width="48px" class="img-fluid">
+                    <img src="../assets/images/logo.png" alt="AnimalZ" width="48px" class="img-fluid">
                     <div class="fw-bold">
                         <span class="text-warning">A</span><span class="text-dark">nimal</span><span class="text-warning">Z</span>
                     </div>
@@ -47,7 +47,7 @@
                     <p class="lead my-3">Discover the strongest, smartest, and fastest animals in the world by searching below, or scroll to see all animals listed from A-Z. We are the largest website of our kind for wild animal and pet lovers worldwide!</p>
                     <button class="btn btn-warning btn-lg my-5 px-4"> See Them All</button>
                 </div>
-                <img src="./showcasseImage.svg" alt="good doggy" class="img-fluid  w-50 d-none d-sm-block ">
+                <img id="showcase-img" src="../assets/images/showcasseImage.svg" alt="good doggy" class="img-fluid  w-50 ">
             </div>
         </div>
     </section>
@@ -57,7 +57,7 @@
         <div class="container-md ">
             <div class=" d-flex align-items-center justify-content-center justify-content-lg-between flex-wrap flex-lg-nowrap py-5">
                 <div>
-                    <p class=" lead fw-bold text-nowrap pe-md-3 text-warning">Sign Up For Our Newsletter</p>
+                    <p id="newsletter-text" class=" lead fw-bold text-nowrap pe-md-3 text-warning">Sign Up For Our Newsletter</p>
                 </div>
                 <div class="input-group ps-md-5 ">
                     <input type="text" class="form-control bg-dark" placeholder="example@domain.com">
@@ -68,9 +68,9 @@
     </section>
 
     <!-- cards -->
-    <section class="bg-light my-4">
+    <section class="bg-light mt-4 pb-4 position-relative">
         <div class="container-md">
-            <div class="row row-col-1 row-cols-sm-2 row-cols-md-3 g-4">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
                  <!-- latest posts -->
                 <!-- <div class="col">
                     <div class="card h-100 ">
@@ -81,7 +81,7 @@
                                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet facilis blanditiis et sapiente sint dolores!
                                 </p>
                             </div>
-                            <a target="#" class="btn btn-warning mt-auto me-auto px-4">Read More</a>
+                            <a target="#" class="btn btn-warning mt-auto me-auto px-4">See More</a>
                         </div>
                     </div>
                 </div> -->
@@ -96,7 +96,7 @@
                                     See lists of animals that start with every letter of the alphabet, from A to Z. We track all types of animals like lions and tigers, dogs and cats, even dinosaurs and spiders. Choose your favorite letter below to see all animals that start with it today.
                                 </p>
                             </div>
-                            <a target="#" class="btn btn-warning mt-auto me-auto px-4">Read More</a>
+                            <a target="#" class="btn btn-warning mt-auto me-auto px-4">See More</a>
                         </div>
                     </div>
                 </div>
@@ -111,7 +111,7 @@
                                     AnimalZ follow’s the IUCN Red List of Threatened Species definitions of threatened and endangered animals. Please consult the lists below to learn more about which animals need our help the most
                                 </p>
                             </div>
-                            <a target="#" class="btn btn-warning mt-auto me-auto px-4">Read More</a>
+                            <a target="#" class="btn btn-warning mt-auto me-auto px-4">See More</a>
                         </div>
                     </div>
                 </div>
@@ -126,7 +126,7 @@
                                     Some of the most popular types of animals on earth are pets. A pet is a domesticated animal that lives with a person or family. The most common pets include dogs, cats, fish, and birds.
                                 </p>
                             </div>
-                            <a target="#" class="btn btn-warning mt-auto me-auto px-4">Read More</a>
+                            <a target="#" class="btn btn-warning mt-auto me-auto px-4">See More</a>
                         </div>
                     </div>
                 </div>
@@ -141,7 +141,7 @@
                                     There are many different types of animals in the world, but some of the largest categories include:Mammals, Reptiles, Fish, Birds, Amphibians, Invertebrates, Insects.
                                 </p>
                             </div>
-                            <a target="#" class="btn btn-warning mt-auto me-auto px-4">Read More</a>
+                            <a target="#" class="btn btn-warning mt-auto me-auto px-4">See More</a>
                         </div>
                     </div>
                 </div>
@@ -156,7 +156,7 @@
                                     We track thousands of animals from every continent and corner on earth, and are adding more every day!
                                 </p>
                             </div>
-                            <a target="#" class="btn btn-warning mt-auto me-auto px-4">Read More</a>
+                            <a target="#" class="btn btn-warning mt-auto me-auto px-4">See More</a>
                         </div>
                     </div>
                 </div>
@@ -171,13 +171,129 @@
                                     More Animal News, Facts, Rankings, and More!
                                 </p>
                             </div>
-                            <a target="#" class="btn btn-warning mt-auto me-auto px-4">Read More</a>
+                            <a target="#" class="btn btn-warning mt-auto me-auto px-4">See More</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- last articles  accordions -->
+    <section class="bg-dark pb-4">
+        <div class="container-md">
+            <!-- first article -->
+            <div class="accordion" id="article-knowMore">
+                <div class="accordion-header">
+                    <div class="card bg-light mb-4" style="top: 1.5rem;">
+                        <div class="row g-0">
+                            <div class="col-md-4 articles-img" style=" background-image: url(../assets/images/irish-setter-senior-looking-up-portrait.webp); background-size: cover; background-position: center;">
+                            </div>
+                            <div class="col-md-8 ">
+                                <div class="card-heater border-bottom border-dark p-2">Do you know</div>
+                                <div class="card-body">
+                                    <h5 class="card-title text-dark">The Nose Knows</h5>
+                                    <p class="card-text lead">A dog’s sense of smell is legendary, but did you know that their nose has as many as 300 million receptors? In comparison, a human nose has about 5 million.</p>
+                                    <a href="#" class="card-link text-dark" data-bs-toggle="collapse" data-bs-target="#knowMore-collapse">Read More ...</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-collapse collapse" id="knowMore-collapse" data-bs-parent="article-knowMore">
+                        <p class="card-text bg-light p-3">Dogs have long been praised for their incredible sense of smell, and the numbers behind their olfactory system are truly mind-boggling. It's fascinating to discover that a dog's nose contains an astonishing 300 million receptors, while a human nose only has around 5 million. This vast difference in receptor count explains why dogs have such an extraordinary ability to detect and distinguish various scents. Their highly developed olfactory system allows them to track scents, locate missing persons, detect diseases, and even identify certain substances. It's no wonder that dogs are often employed in search and rescue operations or as detection dogs. Their sense of smell truly sets them apart.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- second article -->
+
+            <div class="accordion" id="article-readAboute">
+                <!-- <div class="accordion-item bg-light"> -->
+                    <div class="accordion-header">
+                        <!-- card inside accordion -->
+                        <div class="card bg-light mb-4" style="top: 1.5rem;">
+                            <div class="row g-0">
+                                <div class="col-md-4 articles-img" style=" background-image: url(../assets/images/download.jpg); background-size: cover; background-position: center;">
+                                </div>
+                                <div class="col-md-8 ">
+                                    <div class="card-heater border-bottom border-dark p-2">Read About</div>
+                                    <div class="card-body">
+                                        <h5 class="card-title text-dark">Wild Palm Cockatoos Woo Mates With Improvised Drums</h5>
+                                        <p class="card-text lead">Wild male palm cockatoos attract mates through an elaborate musical display, including dancing, vocal serenades, and spontaneous seed pod percussion.</p>
+                                        
+                                        <a href="#" class="card-link text-dark" data-bs-toggle="collapse" data-bs-target="#article-collapse">Read More ...</a>  
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card complete -->
+                    </div>
+                    <div class="accordion-collapse collapse " id="article-collapse" data-bs-parent="#article-readAboute">
+                        <!-- <div class="accordion-body"> -->
+                            <p class=" card-text bg-light p-3 ">
+                                A recent study published in Proceedings of the Royal Society B has found that male palm cockatoos in the wild create tools to enhance their courtship display, rather than for survival purposes. The study, conducted by Dr. Robert Heinsohn from the Australian National University, observed male palm cockatoos in their natural habitats in northern Australia. The male cockatoos first showcase their worth by performing attention-grabbing songs and acrobatic turns. They then create personalized drumsticks using sticks and seed pods, which they use to further attract female mates. The drumming style is unique to each individual male, demonstrating intelligence and creativity. This study provides valuable insights into the complex nature of birds in the wild.
+                            </p>
+                        <!-- </div> -->
+                    </div>
+                <!-- </div> -->
+            </div>
+
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-warning text-dark pb-1">
+        <div class="container-lg">
+            <div class="row ">
+                <div class="col-sm-4 col-md-4 p-3" >
+                    <div class="d-flex flex-nowrap flex-row align-items-center">
+                        <img src="../assets/images/logo.png" alt="logo" class="img-fluid " width="48px">
+                        <h3 class="pt-2">AnimalZ</h3>
+                    </div>
+                    <small>This website was designed by the Animalz team with the purpose of increasing people's knowledge about animals, especially pets. Wise people are happy with animals.</small>
+                </div>
+                <div class="col">
+                    <div class="row row-cols-2 row-cols-sm-2 row-cols-md-4 mt-3">
+                        <div class="col-sm">
+                            <ul class="navbar-nav p-1">
+                                <lt class="h5">animals</lt>
+                                <li><a href="#" class="nav-link p-0 text-dark" >a-z list</a></li>
+                                <li><a href="#" class="nav-link p-0 text-dark" >categories</a></li>
+                                <li><a href="#" class="nav-link p-0 text-dark" >search</a></li>
+                                <li><a href="#" class="nav-link p-0 text-dark" >random fact</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm">
+                            <ul class="navbar-nav p-1">
+                                <lt class="h5">dogs</lt>
+                                <li><a href="#" class="nav-link p-0 text-dark" >a-z list</a></li>
+                                <li><a href="#" class="nav-link p-0 text-dark" >suitable dog quiz</a></li>
+                                <li><a href="#" class="nav-link p-0 text-dark" >search</a></li>
+                                <li><a href="#" class="nav-link p-0 text-dark" >random fact</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm">
+                            <ul class="navbar-nav p-1">
+                                <lt class="h5">cats</lt>
+                                <li><a href="#" class="nav-link p-0 text-dark" >a-z list</a></li>
+                                <li><a href="#" class="nav-link p-0 text-dark" >suitable cat quiz</a></li>
+                                <li><a href="#" class="nav-link p-0 text-dark" >search</a></li>
+                                <li><a href="#" class="nav-link p-0 text-dark" >random fact</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm">
+                            <ul class="navbar-nav p-1">
+                                <lt class="h5">birds</lt>
+                                <li><a href="#" class="nav-link p-0 text-dark" >a-z list</a></li>
+                                <li><a href="#" class="nav-link p-0 text-dark" >suitable bird quiz</a></li>
+                                <li><a href="#" class="nav-link p-0 text-dark" >search</a></li>
+                                <li><a href="#" class="nav-link p-0 text-dark" >random fact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="text-center"><span class="fw-bold">copyright &copy </span> <small>AnimalZ Design and Development team.</small></p>
+        </div>
+    </footer>
    
     <script src="main.js"></script>
     <!-- Bootstrap Bundle with Popper -->

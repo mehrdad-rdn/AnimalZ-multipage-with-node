@@ -67,3 +67,18 @@
     background-color: #B0D9B1 !important;
     border-color: #79AC78 !important;
 }
+
+@media screen and (max-width: 767px) {
+    .articles-img{
+        min-height: 50vw;
+    }
+
+    #showcase-img{
+        width: 100% !important;
+    }
+    #newsletter-text{
+        text-wrap: wrap !important;
+        text-align: center;
+    }
+
+}
