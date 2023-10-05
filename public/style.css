@@ -60,12 +60,15 @@
     background-color: #FFB000 !important;
 }
 
-
-
-
 .form-control:focus {
     background-color: #B0D9B1 !important;
     border-color: #79AC78 !important;
+}
+
+#back-top-btn{
+    display: none;
+    /* border-color: #FFB26B !important; */
+    /* border-width: 2px; */
 }
 
 @media screen and (max-width: 767px) {
