@@ -3,13 +3,14 @@
     --bs-light: #F5F5DC;
     --bs-secondary: #FFCF9D;
     --bs-warning: #EE9322;
+    /* --bs-warning: #E97224; */
    
 
     --bs-dark-rgb:0, 66, 37;
     --bs-light-rgb:245, 245, 220;
     --bs-secondary-rgb: 255, 207, 157;
     --bs-warning-rgb: 238, 147, 34;
-    /* --bs-warning-rgb: 255, 176, 0; */
+    /* --bs-warning-rgb:233, 114, 36; */
 
     --bs-btn-color: #fff;
 
@@ -29,8 +30,8 @@
     color: #004225;
 }
 /* .btn-warning{
-    background-color: #FFB000 !important;
-    border-color: #FFB000 !important;
+    background-color: #E97224 !important;
+    border-color: #E97224 !important;
     color: #004225;
 } */
 
