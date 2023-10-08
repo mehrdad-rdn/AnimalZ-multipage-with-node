@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Bootstrap icons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Enable styles -->
+    <link rel="stylesheet" href="../style.css">
+    <title>AnimalZ Blog</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light user-select-none ">
+        <div class="container-lg">
+            <!-- brand -->
+            <a href="../index.html" class="navbar-brand">
+                <div class="d-flex  align-items-center">
+                    <img src="../../assets/images/logo.png" alt="AnimalZ" width="48px" class="img-fluid">
+                    <div class="fw-bold">
+                        <span class="text-success">A</span><span class="text-dark">nimal</span><span
+                            class="text-success">Z</span>
+                    </div>
+                </div>
+            </a>
+            <!-- toggler button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto text-dark">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="Animals-dropdown-link" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Animals
+                        </a>
+                        <!-- <a href="#" class=" " data-bs-toggle="collaps" data-bs-target="#animals-subList"><i class="bi bi-chevron-double-right"></i></a> -->
+                        <ul class="dropdown-menu bg-light text-dark " style="min-width: auto;"
+                            aria-labelledby="animals-dropdown-link">
+                            <li><a href="#" class="dropdown-item ">A-Z list</a></li>
+                            <li><a href="#" class="dropdown-item ">Dogs</a></li>
+                            <li><a href="#" class="dropdown-item ">cats</a></li>
+                            <li><a href="#" class="dropdown-item ">Birds</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="#suitable-pet" class="nav-link">Suitable pet</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">about us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- main section -->
+    <main class="bg-dark  ">
+        <div class="container-lg">
+            <div class=" row row-cols-1 row-cols-md-2 justify-content-center">
+                
+                <!-- sidebar -->
+                <side class=" col-md-4 mt-md-3 order-3 order-md-1">
+                    <div class="mb-3 p-2 rounded bg-light d-flex flex-column">
+                        <div class="bg-light text-dark">
+                            <h5 class="ms-3 text-capitalize">last articles</h5>
+                            <div class="dflex flex-column">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item"><a href="#article-1" class="navlink link-dark">article-1</a></li>
+                                    <li class="nav-item"><a href="#article-2" class="navlink link-dark">article-2</a></li>
+                                    <li class="nav-item"><a href="#article-3" class="navlink link-dark">article-3</a></li>
+                                    <li class="nav-item"><a href="#article-4" class="navlink link-dark">article-4</a></li>
+                                    <li class="nav-item"><a href="#article-5" class="navlink link-dark">article-5</a></li>
+                                    <li class="nav-item"><a href="#article-6" class="navlink link-dark">article-6</a></li>
+                                    <li class="nav-item"><a href="#article-7" class="navlink link-dark">article-7</a></li>
+                                    <li class="nav-item"><a href="#article-8" class="navlink link-dark">article-8</a></li>
+                                    <li class="nav-item"><a href="#article-9" class="navlink link-dark">article-9</a></li>
+                                    <li class="nav-item"><a href="article-10" class="navlink link-dark">article-10</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="bg-light text-dark">
+                            <h5 class="ms-3 text-capitalize">categories</h5>
+                            <div >
+                                <ul class="navbar-nav">
+                                    <li class="nav-item"><a href="" class="nav-link d-flex flex-nowrap align-items-center "><i class="bi bi-dribbble h3 mx-1"></i>training</a></li>
+                                    <li class="nav-item"><a href="" class="nav-link d-flex flex-nowrap align-items-center "><i class="bi bi-heart-pulse mx-1 h3"></i> Health</a></li>
+                                    <li class="nav-item"><a href="" class="nav-link d-flex flex-nowrap align-items-center "><i class="bi bi-capsule-pill mx-1 h3"></i> nutrition</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="bg-light text-dark">
+                            <h5 class="ms-3 text-capitalize">authors</h5>
+                            <div class="dflex flex-column">
+                                <div class="d-flex flex-nowrap align-items-center ">
+                                    <img src="https://i.pravatar.cc/150?u=mamad" alt="mamad" class="img-fluid w-25 rounded-circle m-1">
+                                    <p class="lead text-capitalize">mat rowe</p>
+                                </div>
+                                <div class="d-flex flex-nowrap align-items-center ">
+                                    <img src="https://i.pravatar.cc/150?u=mamad-javad" alt="laura-doering" class="img-fluid w-25 rounded-circle m-1">
+                                    <p class="lead text-capitalize">laora duering</p>
+                                </div>
+                                <div class="d-flex flex-nowrap align-items-center ">
+                                    <img src="https://i.pravatar.cc/150?u=mamad-bagher" alt="scott-echols" class="img-fluid w-25 rounded-circle m-1">
+                                    <p class="lead text-capitalize">scott scott</p>
+                                </div>
+                                <div class="d-flex flex-nowrap align-items-center ">
+                                    <img src="https://i.pravatar.cc/150?u=jamile" alt="emily-page" class="img-fluid w-25 rounded-circle m-1">
+                                    <p class="lead text-capitalize">emily Page</p>
+                                </div>
+                                <div class="d-flex flex-nowrap align-items-center ">
+                                    <img src="https://i.pravatar.cc/150?u=sakine" alt="jenny-derummy" class="img-fluid w-25 rounded-circle m-1">
+                                    <p class="lead text-capitalize">jenny derummy</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </side>
+
+                <!-- articles -->
+                <section class=" pt-3 col-md-8 order-1 order-md-2">
+                    <div class="d-flex flex-column align-items-center">
+                        <div id="articles">
+                            <!-- first article -->
+                            <div class="card bg-light mb-3">
+                                <div class="row g-0">
+                                    <div class="col-md-4 articles-img"
+                                        style=" background-image: url(../../assets/images/irish-setter-senior-looking-up-portrait.webp); background-size: cover; background-position: center;">
+                                    </div>
+                                    <div class="col-md-8 ">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-dark">The Nose Knows</h5>
+                                            <p class="card-text lead">A dog’s sense of smell is legendary, but did you
+                                                know
+                                                that their nose has as many as 300 million receptors? In comparison, a
+                                                human
+                                                nose has about 5 million.</p>
+                                            <a href="#article-1" class="card-link text-dark seeMore-link">Read More
+                                                ...</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- second article -->
+                            <div class="card bg-light mb-3">
+                                <div class="row g-0">
+                                    <div class="col-md-4 articles-img"
+                                        style=" background-image: url(../../assets/images/black-palm-cockatoo.webp); background-size: cover; background-position: center;">
+                                    </div>
+                                    <div class="col-md-8 ">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-dark">Wild Palm Cockatoos Woo Mates With
+                                                Improvised
+                                                Drums</h5>
+                                            <p class="card-text lead">Wild male palm cockatoos attract mates through an
+                                                elaborate musical display, including dancing, vocal serenades, and
+                                                spontaneous seed pod percussion.</p>
+
+                                            <a href="#article-2" class="card-link text-dark seeMore-link ">Read More
+                                                ...</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- article-3 -->
+                            <div class="card bg-light mb-3">
+                                <div class="row g-0">
+                                    <div class="col-md-4 articles-img"
+                                        style=" background-image: url(https://picsum.photos/id/237/600/600); background-size: cover; background-position: center;">
+                                    </div>
+                                    <div class="col-md-8 ">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-dark">Lorem ipsum dolor sit amet consectetur.
+                                            </h5>
+                                            <p class="card-text lead">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                elit. Voluptas sequi soluta dolorum debitis consequatur facilis, illo
+                                                minus,
+                                                quia quos voluptatum fugiat temporibus beatae! Doloribus maxime facere
+                                                saepe
+                                                architecto explicabo expedita!</p>
+
+                                            <a href="#article-3" class="card-link text-dark seeMore-link ">Read More
+                                                ...</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- article-4 -->
+                            <div class="card bg-light mb-3">
+                                <div class="row g-0">
+                                    <div class="col-md-4 articles-img"
+                                        style=" background-image: url(https://picsum.photos/id/1003/600/600); background-size: cover; background-position: center;">
+                                    </div>
+                                    <div class="col-md-8 ">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-dark">Lorem ipsum dolor sit amet.</h5>
+                                            <p class="card-text lead"> consectetur adipisicing elit. Quos aliquid vitae
+                                                quibusdam fugiat possimus repudiandae quis, accusantium numquam animi
+                                                iste
+                                                sequi, quo facilis expedita sit iusto obcaecati dignissimos ipsum! Dolor
+                                                tenetur inventore vitae expedita.</p>
+
+                                            <a href="#article-4" class="card-link text-dark seeMore-link ">Read More
+                                                ...</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- article-5 -->
+                            <div class="card bg-light mb-3">
+                                <div class="row g-0">
+                                    <div class="col-md-4 articles-img"
+                                        style=" background-image: url(https://picsum.photos/id/275/600/600); background-size: cover; background-position: center;">
+                                    </div>
+                                    <div class="col-md-8 ">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-dark"> consectetur adipisicing elit. Deleniti,
+                                                cupiditate!</h5>
+                                            <p class="card-text lead"> Illum alias eum, repellat cum perspiciatis amet
+                                                sequi
+                                                ea dicta hic debitis possimus quae voluptate accusamus quo maiores sunt,
+                                                velit modi fuga quas at est excepturi a cumque iste. Porro, tempora
+                                                veritatis..</p>
+
+                                            <a href="#article-5" class="card-link text-dark seeMore-link ">Read More
+                                                ...</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- article-6 -->
+                            <div class="card bg-light mb-3">
+                                <div class="row g-0">
+                                    <div class="col-md-4 articles-img"
+                                        style=" background-image: url(https://picsum.photos/id/244/600/600); background-size: cover; background-position: center;">
+                                    </div>
+                                    <div class="col-md-8 ">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-dark">inventore sint quasi alias adipisci
+                                                ducimus.
+                                            </h5>
+                                            <p class="card-text lead"> illo, ab expedita quod earum et commodi,
+                                                provident
+                                                delectus aliquam repellendus laudantium quisquam quasi tempore ratione
+                                                similique iure saepe?</p>
+
+                                            <a href="#article-6" class="card-link text-dark seeMore-link ">Read More
+                                                ...</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- article-7 -->
+                            <div class="card bg-light mb-3">
+                                <div class="row g-0">
+                                    <div class="col-md-4 articles-img"
+                                        style=" background-image: url(https://picsum.photos/id/219/600/600); background-size: cover; background-position: center;">
+                                    </div>
+                                    <div class="col-md-8 ">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-dark"> Natus quibusdam unde assumenda?</h5>
+                                            <p class="card-text lead">dolor sit amet consectetur adipisicing elit. iusto
+                                                distinctio, eaque error iure amet dolorum atque vitae ipsum, aspernatur
+                                                nulla totam! Provident, excepturi aliquam. Fugit inventore omnis id
+                                                magnam.
+                                            </p>
+
+                                            <a href="#article-7" class="card-link text-dark seeMore-link ">Read More
+                                                ...</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- article-8 -->
+                            <div class="card bg-light mb-3">
+                                <div class="row g-0">
+                                    <div class="col-md-4 articles-img"
+                                        style=" background-image: url(https://picsum.photos/id/200/600/600); background-size: cover; background-position: center;">
+                                    </div>
+                                    <div class="col-md-8 ">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-dark">sit Lorem, ipsum dolor. <amet
+                                                    class="lorem3">
+                                                </amet>
+                                            </h5>
+                                            <p class="card-text lead"> consectetur adipisicing elit. Neque aspernatur
+                                                harum
+                                                beatae, ut error architecto? Reprehenderit ullam officiis molestiae
+                                                Lorem
+                                                ipsum dolor sit amet consectetur adipisicing elit. Itaque, nisi!.</p>
+
+                                            <a href="#article-8" class="card-link text-dark seeMore-link ">Read More
+                                                ...</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- article-9 -->
+                            <div class="card bg-light mb-3">
+                                <div class="row g-0">
+                                    <div class="col-md-4 articles-img"
+                                        style=" background-image: url(https://picsum.photos/id/169/600/600); background-size: cover; background-position: center;">
+                                    </div>
+                                    <div class="col-md-8 ">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-dark"> amet consectetur adipisicing elit.</h5>
+                                            <p class="card-text lead">amet consectetur adipisicing elit. Veniam non
+                                                totam
+                                                odit excepturi nulla molestias. Lorem ipsum dolor sit amet.</p>
+
+                                            <a href="#article-9" class="card-link text-dark seeMore-link ">Read More
+                                                ...</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- article-10 -->
+                            <div class="card bg-light mb-3">
+                                <div class="row g-0">
+                                    <div class="col-md-4 articles-img"
+                                        style=" background-image: url(https://picsum.photos/id/40/600/600); background-size: cover; background-position: center;">
+                                    </div>
+                                    <div class="col-md-8 ">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-dark"> necessitatibus debitis quisquam sequi
+                                                architecto!</h5>
+                                            <p class="card-text lead">alias officia at vitae ut dolorum, consectetur
+                                                quod
+                                                praesentium quas architecto quae natus veritatis iste impedit illo
+                                                dicta.
+                                                Optio laborum aut alias architecto consequuntur beatae culpa ad velit
+                                                numquam itaque quas illum neque, ipsum corporis? Repellat.</p>
+
+                                            <a href="#article-10" class="card-link text-dark seeMore-link ">Read More
+                                                ...</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- pagination -->
+                <section class="col  w-100 order-2 order-md-3">
+                    <nav aria-label="Page navigation example user-select-none ">
+                        <ul class="pagination" style="justify-content: center;">
+                            <li class="page-item">
+                                <a class="page-link bg-light text-dark" href="#" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                </a>
+                            </li>
+                            <li class="page-item"><a class="page-link bg-dark text-light active" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link bg-light text-dark" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link bg-light text-dark" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link bg-light text-dark" href="#" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </section>
+
+
+            </div><!-- container end-->
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-warning text-dark pb-1 ">
+        <div class="container-lg">
+            <div class="row mb-3">
+                <div class="col-sm-4 col-md-4 p-3">
+                    <div class="d-flex flex-nowrap flex-row align-items-center" id="about">
+                        <img src="../../assets/images/logo.png" alt="logo" class="img-fluid " width="48px">
+                        <h3 class="pt-2">AnimalZ</h3>
+                    </div>
+                    <small>This website was designed by the Animalz team with the purpose of increasing people's
+                        knowledge about animals, especially pets. Wise people are happy with animals.</small>
+                </div>
+                <div class="col mt-auto">
+                    <div class="row row-cols-2 row-cols-sm-2 row-cols-md-4 mt-3">
+                        <div class="col-sm">
+                            <ul class="navbar-nav p-1">
+                                <lt class="h5">animals</lt>
+                                <li><a href="#" class="nav-link p-0 text-dark">a-z list</a></li>
+                                <li><a href="#" class="nav-link p-0 text-dark">categories</a></li>
+                                <li><a href="#" class="nav-link p-0 text-dark">search</a></li>
+                                <li><a href="#" class="nav-link p-0 text-dark">random fact</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm">
+                            <ul class="navbar-nav p-1">
+                                <lt class="h5">dogs</lt>
+                                <li><a href="#" class="nav-link p-0 text-dark">a-z list</a></li>
+                                <li><a href="#" class="nav-link p-0 text-dark">suitable dog</a></li>
+                                <li><a href="#" class="nav-link p-0 text-dark">search</a></li>
+                                <li><a href="#" class="nav-link p-0 text-dark">random fact</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm">
+                            <ul class="navbar-nav p-1">
+                                <lt class="h5">cats</lt>
+                                <li><a href="#" class="nav-link p-0 text-dark">a-z list</a></li>
+                                <li><a href="#" class="nav-link p-0 text-dark">suitable cat</a></li>
+                                <li><a href="#" class="nav-link p-0 text-dark">search</a></li>
+                                <li><a href="#" class="nav-link p-0 text-dark">random fact</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm">
+                            <ul class="navbar-nav p-1">
+                                <lt class="h5">birds</lt>
+                                <li><a href="#" class="nav-link p-0 text-dark">a-z list</a></li>
+                                <li><a href="#" class="nav-link p-0 text-dark">suitable bird</a></li>
+                                <li><a href="#" class="nav-link p-0 text-dark">search</a></li>
+                                <li><a href="#" class="nav-link p-0 text-dark">random fact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="text-center ">copyright<span class="fw-bold text-danger"> &copy </span> <small>AnimalZ Design and
+                    Development team.</small></p>
+        </div>
+    </footer>
+
+    <!-- Back To Top Button -->
+    <!-- first method -->
+    <a href="#"
+        class="bg-dark btn bg-opacity-50 border-2 border-warning rounded-circle position-fixed bottom-0 end-0 translate-middle "
+        id="back-top-btn"><i class="bi bi-arrow-up text-warning h1"></i></a>
+
+
+    <!-- Enable main.js scripts -->
+    <script src="../main.js"></script>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
