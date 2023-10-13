@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Bootstrap icons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Enable styles -->
+    <link rel="stylesheet" href="../style.css">
+    <title>Dog Breeds</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light user-select-none ">
+        <div class="container-lg">
+            <!-- brand -->
+            <a href="../index.html" class="navbar-brand">
+                <div class="d-flex  align-items-center">
+                    <img src="../../assets/images/logo.png" alt="AnimalZ" width="48px" class="img-fluid">
+                    <div class="fw-bold">
+                        <span class="text-success">A</span><span class="text-dark">nimal</span><span
+                            class="text-success">Z</span>
+                    </div>
+                </div>
+            </a>
+            <!-- toggler button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="nav navbar-nav ms-auto text-dark">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="Animals-dropdown-link" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Animals
+                        </a>
+                        <!-- <a href="#" class=" " data-bs-toggle="collaps" data-bs-target="#animals-subList"><i class="bi bi-chevron-double-right"></i></a> -->
+                        <ul class="dropdown-menu bg-light text-dark " style="min-width: auto;"
+                            aria-labelledby="animals-dropdown-link">
+                            <li><a href="#" class="dropdown-item ">A-Z list</a></li>
+                            <li><a href="#" class="dropdown-item ">Dogs</a></li>
+                            <li><a href="#" class="dropdown-item ">cats</a></li>
+                            <li><a href="#" class="dropdown-item ">Birds</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="#suitable-pet" class="nav-link">Suitable pet</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">about us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <div class="carousel ">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../../assets/images/golden retrevir.jpg" alt="golden" class="d-block w-100">
+                    <div class="carousel-caption text-secondary bg-dark bg-opacity-50 rounded-sm">
+                        <h5 class="text-capitalize display-6">Dog Breeds</h5>
+                        <p class="lead"> Learn more about dog breeds and their Characteristics.</p>
+                        <div class="carousel-btn">
+                            <a href="#filter-form" class="btn btn-sm btn-warning m-1"><i class="bi bi-funnel me-1"></i> Filter
+                                Breeds</a>
+                            <a href="./blog.html" class="btn btn-sm btn-warning m-1"><i class="bi bi-card-text me-1"></i> Read
+                                Articles</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="bg-dark pb-3 ">
+        <div class="row row-cols-1 row-cols-md-2 justify-content-end container-fluid">
+            <aside class="col position-sticky bg-light overflow-scroll my-4 rounded order-last order-md-first"
+                style=" top: 0; height: 100dvh;">
+
+                <!-- search Box  -->
+                <div class="d-flex flex-column justify-content-around mt-3">
+                    <p class=" text-uppercase text-dark text-start m-0 flex-fill">Find by breed name</p>
+                    <div class="input-group">
+                        <input type="text" class="form-control bg-dark" placeholder="Enter Dog Breed ..."
+                            aria-lable="search-box" aria-describedby="search-btn">
+                        <button class="btn btn-warning" type="button" id="search-btn">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- filter form -->
+                <section class=" my-3" id="filter-form">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <span class="text-dark text-uppercase"><i class="bi bi-funnel-fill h6 mx-1"></i>filter
+                            breeds</span>
+                        <a href="" class="text-decoration-none fw-bold text-success ">Clear All</a>
+                    </div>
+                    <div class="w-100 bg-warning" style="height: 0.1rem;"></div>
+
+                    <form action="#">
+                        <div class="accordion accordion-flush pt-2" id="filter-accordion">
+                            <!-- protectiveness -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="filter-protectiveness">
+                                    <button class="accordion-button collapsed bg-light p-1 text-capitalize" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#protectiveness-collapse"
+                                        aria-expanded="false" aria-controls="protectiveness-collapse">
+                                        protectiveness
+                                    </button>
+                                </h2>
+                                <div id="protectiveness-collapse" class="accordion-collapse collapse"
+                                    aria-labelledby="filter-protectiveness">
+                                    <div class="accordion-body bg-light p-1">
+                                        <input class="form-range" type="range" name="shedding" id="shedding" min="1"
+                                            max="5" step="1">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- shedding -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="filter-shedding">
+                                    <button class="accordion-button collapsed bg-light p-1 text-capitalize" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#shedding-collapse"
+                                        aria-expanded="false" aria-controls="shedding-collapse">
+                                        shedding
+                                    </button>
+                                </h2>
+                                <div id="shedding-collapse" class="accordion-collapse collapse"
+                                    aria-labelledby="filter-shedding">
+                                    <div class="accordion-body bg-light p-1">
+                                        <input class="form-range" type="range" name="shedding" id="shedding" min="1"
+                                            max="5" step="1">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- trainability -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="filter-trainability">
+                                    <button class="accordion-button collapsed bg-light p-1 text-capitalize" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#trainability-collapse"
+                                        aria-expanded="false" aria-controls="trainability-collapse">
+                                        trainability
+                                    </button>
+                                </h2>
+                                <div id="trainability-collapse" class="accordion-collapse collapse"
+                                    aria-labelledby="filter-trainability">
+                                    <div class="accordion-body bg-light p-1">
+                                        <input class="form-range" type="range" name="trainability" id="trainability"
+                                            min="1" max="5" step="1">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- energy -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="filter-energy">
+                                    <button class="accordion-button collapsed bg-light p-1 text-capitalize" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#energy-collapse"
+                                        aria-expanded="false" aria-controls="energy-collapse">
+                                        energy
+                                    </button>
+                                </h2>
+                                <div id="energy-collapse" class="accordion-collapse collapse"
+                                    aria-labelledby="filter-energy">
+                                    <div class="accordion-body bg-light p-1">
+                                        <input class="form-range" type="range" name="energy" id="energy" min="1" max="5"
+                                            step="1">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- barking -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="filter-barking">
+                                    <button class="accordion-button collapsed bg-light p-1 text-capitalize" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#barking-collapse"
+                                        aria-expanded="false" aria-controls="barking-collapse">
+                                        barking
+                                    </button>
+                                </h2>
+                                <div id="barking-collapse" class="accordion-collapse collapse"
+                                    aria-labelledby="filter-barking">
+                                    <div class="accordion-body bg-light p-1">
+                                        <input class="form-range" type="range" name="barking" id="barking" min="1"
+                                            max="5" step="1">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- height -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="filter-height">
+                                    <button class="accordion-button collapsed bg-light p-1 text-capitalize" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#height-collapse"
+                                        aria-expanded="false" aria-controls="height-collapse">
+                                        height in inches
+                                    </button>
+                                </h2>
+                                <div id="height-collapse" class="accordion-collapse collapse"
+                                    aria-labelledby="filter-height">
+                                    <div class="accordion-body bg-light p-1">
+                                        <input class="form-range" type="range" name="height" id="height" min="5" max="37"
+                                            step="8">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- weight -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="filter-weight">
+                                    <button class="accordion-button collapsed bg-light p-1 text-capitalize" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#weight-collapse"
+                                        aria-expanded="false" aria-controls="weight-collapse">
+                                        weight in pounds
+                                    </button>
+                                </h2>
+                                <div id="weight-collapse" class="accordion-collapse collapse"
+                                    aria-labelledby="filter-weight">
+                                    <div class="accordion-body bg-light p-1">
+                                        <input class="form-range" type="range" name="weight" id="weight" min="5" max="245"
+                                            step="60">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- life-expectancy -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="filter-life-expectancy">
+                                    <button class="accordion-button collapsed bg-light p-1 text-capitalize" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#life-expectancy-collapse"
+                                        aria-expanded="false" aria-controls="life-expectancy-collapse">
+                                        life expectancy in years
+                                    </button>
+                                </h2>
+                                <div id="life-expectancy-collapse" class="accordion-collapse collapse"
+                                    aria-labelledby="filter-life-expectancy">
+                                    <div class="accordion-body bg-light p-1">
+                                        <input class="form-range" type="range" name="life-expectancy"
+                                            id="life-expectancy" min="5" max="17" step="3">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="w-100 bg-warning" style="height: 0.1rem;"></div>
+                        <div class="d-flex align-items-center justify-content-between mt-1">
+                            <input class="btn btn-dark btn-sm" type="submit"></input>
+                            <a class="text-decoration-none fw-bold text-success " type="reset" value="Clear">Clear
+                                All</a>
+                        </div>
+                    </form>
+                </section>
+            </aside>
+            <section class="col" id="breeds" style="min-width: calc(92vw - 15rem);">
+
+                <!-- dog breed article -->
+                <div class="accordion" id="article-breeds">
+                    <div class="accordion-header" id="breeds-header">
+                        <div class="card bg-light mt-4">
+                            <div class="row g-0">
+                                <div class="col-lg-4 articles-img d-flex"
+                                    style=" background-image: url(../../assets/images/Scottish-Terrier-On-White-02.webp); background-size: cover; background-position: center;">
+                                    <!-- <a href="" class="nav-link p-1 mt-auto mx-auto">Scottish Terrier</a> -->
+                                </div>
+                                <div class="col-lg-8 mt-auto">
+                                    <!-- <div class="card-heater border-bottom border-dark p-2">Read About</div> -->
+                                    <div class="card-body p-2 text-dark">
+                                        <h5 class="card-title"> What's a dog breed?
+                                        </h5>
+                                        <p class="card-text p-0">People have been breeding dogs since prehistoric
+                                            times. The earliest dog breeders used wolves to create domestic dogs. From
+                                            the beginning, humans purposefully bred dogs to perform various tasks.
+
+                                            Hunting, guarding, and herding are thought to be among the earliest job…
+
+                                            <a href="#" class="text-warning text-decoration-none seeMore-link"
+                                                data-bs-toggle="collapse" data-bs-target="#article-collapse"
+                                                aria-expanded="true"
+                                                aria-controls="#article-collapse"><small>MORE</small></a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-collapse collapse card bg-light text-dark" id="article-collapse"
+                        data-bs-parent="#article-breeds" aria-labelledby="breeds-header">
+                        <div class=" px-3 pt-3 m-0">
+                            <p>For thousands of years, humans bred dogs toward the physical and mental traits best
+                                suited for the work expected of them. The sleek Greyhound types bred to chase
+                                fleet-footed prey, and the huge mastiff types used as guard dogs and warriors, are two
+                                ancient examples of dogs bred for specific jobs.
+                            </p>
+                            <p>
+                                As humans became more sophisticated, so did their dogs. Eventually, there emerged
+                                specific breeds of dogs, custom-bred to suit the breeders’ local needs and
+                                circumstances. The Greyhound, for instance, was the foundation type for the immense
+                                Irish Wolfhound and the dainty Italian Greyhound. All three have a distinct family
+                                resemblance, but you’d never mistake one for another.
+                            </p>
+                            <p>
+                                So, then, when is a breed a breed and not just a kind or type of dog? The simplest way
+                                to define a breed is to say it always “breeds true.” That is, breeding a purebred Irish
+                                Setter to another purebred Irish Setter will always produce dogs instantly recognizable
+                                as Irish Setters.
+                            </p>
+                            <p>
+                                Each breed’s ideal physical traits, movement, and temperament are set down in a written
+                                document called a “breed standard.” For example, the breed standard sets forth the
+                                traits that make a Cocker Spaniel a Cocker Spaniel and not a Springer Spaniel.
+                            </p>
+                            <p>
+                                The AKC standard for each breed originates with a “parent club,” the AKC-recognized
+                                national club devoted to a particular breed. Once approved by the AKC, a standard
+                                becomes both the breeder’s “blueprint” and the instrument used by dog show judges to
+                                evaluate a breeder’s work.
+                            </p>
+                            <p>
+                                There are over 340 dog breeds known throughout the world. The American Kennel Club
+                                recognizes 200 breeds. </p>
+                        </div>
+                        <a href="#" class=" text-warning text-decoration-none mx-3 seeLess-link"
+                            data-bs-toggle="collapse" data-bs-target="#article-collapse"><small>LESS</small></a>
+                    </div>
+                </div>
+
+                <!-- Breed Card -->
+                <div class="row g-3 justify-content-center justify-content-sm-start py-4 px-1 mx-auto">
+                    <!-- cart-1-->
+                    <div class=" card bg-light p-0 m-1 col lh-2" style="min-width: 12rem; max-width: 15rem">
+                        <img src="https://api-ninjas.com/images/dogs/golden_retriever.jpg" alt="golden Retriever"
+                            class="card-img-top">
+                        <div class="card-body p-1 text-dark">
+                            <h6 class="card-title text-capitalize">golden Retriever</h6>
+                            <!-- <p class="card-text small">Medium size dog with this Characteristics </p> -->
+                        </div>
+                        <div class=" mx-1 text-capitalize">
+                            <div class="d-flex flex-wrap flex-sm-nowrap align-items-center">
+                                <span class="small">shedding</span>
+                                <div style="height: 0.6rem; width:100%;"
+                                    class="ms-auto border border-primary rounded-pill w-50">
+                                    <div class="bg-primary rounded-s-pill" style="width: calc(4*20%); height: 100%;">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-wrap flex-sm-nowrap align-items-center">
+                                <span class="small">protectiveness</span>
+                                <div style="height: 0.6rem; width:100%;"
+                                    class="ms-auto border border-primary rounded-pill w-50">
+                                    <div class="bg-primary rounded-s-pill" style="width: calc(3*20%); height: 100%;">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-wrap flex-sm-nowrap align-items-center">
+                                <span class="small">trainability</span>
+                                <div style="height: 0.6rem; width:100%;"
+                                    class="ms-auto border border-primary rounded-pill w-50">
+                                    <div class="bg-primary rounded-s-pill" style="width: calc(5*20%); height: 100%;">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-wrap flex-sm-nowrap align-items-center">
+                                <span class="small">energy</span>
+                                <div style="height: 0.6rem; width:100%;"
+                                    class="ms-auto border border-primary rounded-pill w-50">
+                                    <div class="bg-primary rounded-s-pill" style="width: calc(3*20%); height: 100%;">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-wrap flex-sm-nowrap align-items-center">
+                                <span class="small">barking</span>
+                                <div style="height: 0.6rem; width:100%;"
+                                    class="ms-auto border border-primary rounded-pill w-50">
+                                    <div class="bg-primary rounded-s-pill" style="width: calc(1*20%); height: 100%;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="../pages/dogs.html" class="btn btn-dark btn-sm stretched-link m-1">See Full Article</a>
+                    </div>
+                    <!-- cart-2 -->
+                    <div class=" card bg-light p-0 m-1 col lh-2 " style="min-width: 12rem; max-width: 15rem">
+                        <img src="https://api-ninjas.com/images/dogs/golden_retriever.jpg" alt="golden Retriever"
+                            class="card-img-top">
+                        <div class="card-body p-1 text-dark">
+                            <h6 class="card-title text-capitalize">golden Retriever</h6>
+                            <!-- <p class="card-text small">Medium size dog with this Characteristics </p> -->
+                        </div>
+                        <div class=" mx-1 text-capitalize">
+                            <div class="d-flex flex-wrap flex-sm-nowrap align-items-center">
+                                <span class="small">shedding</span>
+                                <div style="height: 0.6rem; width:100%;"
+                                    class="ms-auto border border-primary rounded-pill w-50">
+                                    <div class="bg-primary rounded-s-pill" style="width: calc(4*20%); height: 100%;">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-wrap flex-sm-nowrap align-items-center">
+                                <span class="small">protectiveness</span>
+                                <div style="height: 0.6rem; width:100%;"
+                                    class="ms-auto border border-primary rounded-pill w-50">
+                                    <div class="bg-primary rounded-s-pill" style="width: calc(3*20%); height: 100%;">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-wrap flex-sm-nowrap align-items-center">
+                                <span class="small">trainability</span>
+                                <div style="height: 0.6rem; width:100%;"
+                                    class="ms-auto border border-primary rounded-pill w-50">
+                                    <div class="bg-primary rounded-s-pill" style="width: calc(5*20%); height: 100%;">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-wrap flex-sm-nowrap align-items-center">
+                                <span class="small">energy</span>
+                                <div style="height: 0.6rem; width:100%;"
+                                    class="ms-auto border border-primary rounded-pill w-50">
+                                    <div class="bg-primary rounded-s-pill" style="width: calc(3*20%); height: 100%;">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-wrap flex-sm-nowrap align-items-center">
+                                <span class="small">barking</span>
+                                <div style="height: 0.6rem; width:100%;"
+                                    class="ms-auto border border-primary rounded-pill w-50">
+                                    <div class="bg-primary rounded-s-pill" style="width: calc(1*20%); height: 100%;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="../pages/dogs.html" class="btn btn-dark btn-sm stretched-link m-1">See Full Article</a>
+                    </div>
+                    <!-- cart-3 -->
+                    <div class=" card bg-light p-0 m-1 col lh-2 " style="min-width: 12rem; max-width: 15rem">
+                        <img src="https://api-ninjas.com/images/dogs/golden_retriever.jpg" alt="golden Retriever"
+                            class="card-img-top">
+                        <div class="card-body p-1 text-dark">
+                            <h6 class="card-title text-capitalize">golden Retriever</h6>
+                            <!-- <p class="card-text small">Medium size dog with this Characteristics </p> -->
+                        </div>
+                        <div class=" mx-1 text-capitalize">
+                            <div class="d-flex flex-wrap flex-sm-nowrap align-items-center">
+                                <span class="small">shedding</span>
+                                <div style="height: 0.6rem; width:100%;"
+                                    class="ms-auto border border-primary rounded-pill w-50">
+                                    <div class="bg-primary rounded-s-pill" style="width: calc(4*20%); height: 100%;">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-wrap flex-sm-nowrap align-items-center">
+                                <span class="small">protectiveness</span>
+                                <div style="height: 0.6rem; width:100%;"
+                                    class="ms-auto border border-primary rounded-pill w-50">
+                                    <div class="bg-primary rounded-s-pill" style="width: calc(3*20%); height: 100%;">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-wrap flex-sm-nowrap align-items-center">
+                                <span class="small">trainability</span>
+                                <div style="height: 0.6rem; width:100%;"
+                                    class="ms-auto border border-primary rounded-pill w-50">
+                                    <div class="bg-primary rounded-s-pill" style="width: calc(5*20%); height: 100%;">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-wrap flex-sm-nowrap align-items-center">
+                                <span class="small">energy</span>
+                                <div style="height: 0.6rem; width:100%;"
+                                    class="ms-auto border border-primary rounded-pill w-50">
+                                    <div class="bg-primary rounded-s-pill" style="width: calc(3*20%); height: 100%;">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-wrap flex-sm-nowrap align-items-center">
+                                <span class="small">barking</span>
+                                <div style="height: 0.6rem; width:100%;"
+                                    class="ms-auto border border-primary rounded-pill w-50">
+                                    <div class="bg-primary rounded-s-pill" style="width: calc(1*20%); height: 100%;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="../pages/dogs.html" class="btn btn-dark btn-sm stretched-link m-1">See Full Article</a>
+                    </div>
+                    <!-- cart-4 -->
+                    <div class=" card bg-light p-0 m-1 col lh-2 " style="min-width: 12rem; max-width: 15rem">
+                        <img src="https://api-ninjas.com/images/dogs/golden_retriever.jpg" alt="golden Retriever"
+                            class="card-img-top">
+                        <div class="card-body p-1 text-dark">
+                            <h6 class="card-title text-capitalize">golden Retriever</h6>
+                            <!-- <p class="card-text small">Medium size dog with this Characteristics </p> -->
+                        </div>
+                        <div class=" mx-1 text-capitalize">
+                            <div class="d-flex flex-wrap flex-sm-nowrap align-items-center">
+                                <span class="small">shedding</span>
+                                <div style="height: 0.6rem; width:100%;"
+                                    class="ms-auto border border-primary rounded-pill w-50">
+                                    <div class="bg-primary rounded-s-pill" style="width: calc(4*20%); height: 100%;">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-wrap flex-sm-nowrap align-items-center">
+                                <span class="small">protectiveness</span>
+                                <div style="height: 0.6rem; width:100%;"
+                                    class="ms-auto border border-primary rounded-pill w-50">
+                                    <div class="bg-primary rounded-s-pill" style="width: calc(3*20%); height: 100%;">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-wrap flex-sm-nowrap align-items-center">
+                                <span class="small">trainability</span>
+                                <div style="height: 0.6rem; width:100%;"
+                                    class="ms-auto border border-primary rounded-pill w-50">
+                                    <div class="bg-primary rounded-s-pill" style="width: calc(5*20%); height: 100%;">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-wrap flex-sm-nowrap align-items-center">
+                                <span class="small">energy</span>
+                                <div style="height: 0.6rem; width:100%;"
+                                    class="ms-auto border border-primary rounded-pill w-50">
+                                    <div class="bg-primary rounded-s-pill" style="width: calc(3*20%); height: 100%;">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-wrap flex-sm-nowrap align-items-center">
+                                <span class="small">barking</span>
+                                <div style="height: 0.6rem; width:100%;"
+                                    class="ms-auto border border-primary rounded-pill w-50">
+                                    <div class="bg-primary rounded-s-pill" style="width: calc(1*20%); height: 100%;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="../pages/dogs.html" class="btn btn-dark btn-sm stretched-link m-1">See Full Article</a>
+                    </div>
+                </div>
+
+
+                <!-- <div class="text-capitalize text-secondary d-flex flex-column align-items-center">
+                    <img class="img-fluid rounded-pill " src="https://api-ninjas.com/images/dogs/golden_retriever.jpg" alt="golden_retriever">
+                    <p class="display-6 text-center">Golden Retriever</p>
+                    <dl class="row row-cols-2">
+                        <dt class="col col-sm-6 text-end">good with children</dt>
+                        <dd class="col col-sm-6 text-start">5</dd>
+                        <dt class="col col-sm-6 text-end">good with other dogs</dt>
+                        <dd class="col col-sm-6 text-start">5</dd>
+                        <dt class="col col-sm-6 text-end">shedding</dt>
+                        <dd class="col col-sm-6 text-start">4 of 5</dd>
+                        <dt class="col col-sm-6 text-end">grooming</dt>
+                        <dd class="col col-sm-6 text-start">2</dd>
+                        <dt class="col col-sm-6 text-end">drooling</dt>
+                        <dd class="col col-sm-6 text-start">2</dd>
+                        <dt class="col col-sm-6 text-end">coat length</dt>
+                        <dd class="col col-sm-6 text-start">1</dd>
+                        <dt class="col col-sm-6 text-end">good with strangers</dt>
+                        <dd class="col col-sm-6 text-start">5</dd>
+                        <dt class="col col-sm-6 text-end">playfulness</dt>
+                        <dd class="col col-sm-6 text-start">4</dd>
+                        <dt class="col col-sm-6 text-end">protectiveness</dt>
+                        <dd class="col col-sm-6 text-start">3 of 5</dd>
+                        <dt class="col col-sm-6 text-end">trainability</dt>
+                        <dd class="col col-sm-6 text-start">5</dd>
+                        <dt class="col col-sm-6 text-end">energy</dt>
+                        <dd class="col col-sm-6 text-start">3 of 5</dd>
+                        <dt class="col col-sm-6 text-end">barking</dt>
+                        <dd class="col col-sm-6 text-start">1 of 5</dd>
+                        <dt class="col col-sm-6 text-end">min life expectancy</dt>
+                        <dd class="col col-sm-6 text-start">10</dd>
+                        <dt class="col col-sm-6 text-end">max life expectancy</dt>
+                        <dd class="col col-sm-6 text-start">12</dd>
+                        <dt class="col col-sm-6 text-end">max height male</dt>
+                        <dd class="col col-sm-6 text-start">24</dd>
+                        <dt class="col col-sm-6 text-end">max height female</dt>
+                        <dd class="col col-sm-6 text-start">24</dd>
+                        <dt class="col col-sm-6 text-end">max weight male</dt>
+                        <dd class="col col-sm-6 text-start">75</dd>
+                        <dt class="col col-sm-6 text-end">max weight female</dt>
+                        <dd class="col col-sm-6 text-start">65</dd>
+                        <dt class="col col-sm-6 text-end">min height male</dt>
+                        <dd class="col col-sm-6 text-start">23</dd>
+                        <dt class="col col-sm-6 text-end">min height female</dt>
+                        <dd class="col col-sm-6 text-start">23</dd>
+                        <dt class="col col-sm-6 text-end">min weight male</dt>
+                        <dd class="col col-sm-6 text-start">65</dd>
+                        <dt class="col col-sm-6 text-end">min weight female</dt>
+                        <dd class="col col-sm-6 text-start">55</dd>
+                    </dl>
+                </div> -->
+            </section>
+        </div>
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="bg-warning text-dark pb-1 ">
+        <div class="container-lg">
+            <div class="row mb-3">
+                <div class="col-sm-4 col-md-4 p-3">
+                    <div class="d-flex flex-nowrap flex-row align-items-center" id="about">
+                        <img src="../../assets/images/logo.png" alt="logo" class="img-fluid " width="48px">
+                        <h3 class="pt-2">AnimalZ</h3>
+                    </div>
+                    <small>This website was designed by the Animalz team with the purpose of increasing people's
+                        knowledge about animals, especially pets. Wise people are happy with animals.</small>
+                </div>
+                <div class="col mt-auto">
+                    <div class="row row-cols-2 row-cols-sm-2 row-cols-md-4 mt-3">
+                        <div class="col-sm">
+                            <ul class="nav flex-column p-1">
+                                <lt class="h5">animals</lt>
+                                <li><a href="#" class="nav-link p-0 text-dark">a-z list</a></li>
+                                <li><a href="#" class="nav-link p-0 text-dark">categories</a></li>
+                                <li><a href="#" class="nav-link p-0 text-dark">search</a></li>
+                                <li><a href="#" class="nav-link p-0 text-dark">random fact</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm">
+                            <ul class="nav flex-column p-1">
+                                <lt class="h5">dogs</lt>
+                                <li><a href="#" class="nav-link p-0 text-dark">a-z list</a></li>
+                                <li><a href="#" class="nav-link p-0 text-dark">suitable dog</a></li>
+                                <li><a href="#" class="nav-link p-0 text-dark">search</a></li>
+                                <li><a href="#" class="nav-link p-0 text-dark">random fact</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm">
+                            <ul class="nav flex-column p-1">
+                                <lt class="h5">cats</lt>
+                                <li><a href="#" class="nav-link p-0 text-dark">a-z list</a></li>
+                                <li><a href="#" class="nav-link p-0 text-dark">suitable cat</a></li>
+                                <li><a href="#" class="nav-link p-0 text-dark">search</a></li>
+                                <li><a href="#" class="nav-link p-0 text-dark">random fact</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm">
+                            <ul class="nav flex-column p-1">
+                                <lt class="h5">birds</lt>
+                                <li><a href="#" class="nav-link p-0 text-dark">a-z list</a></li>
+                                <li><a href="#" class="nav-link p-0 text-dark">suitable bird</a></li>
+                                <li><a href="#" class="nav-link p-0 text-dark">search</a></li>
+                                <li><a href="#" class="nav-link p-0 text-dark">random fact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="text-center ">copyright<span class="fw-bold text-danger"> &copy </span> <small>AnimalZ Design and
+                    Development team.</small></p>
+        </div>
+    </footer>
+
+    <!-- Back To Top Button -->
+    <!-- first method -->
+    <a href="#"
+        class="bg-dark btn bg-opacity-50 border-2 border-warning rounded-circle position-fixed bottom-0 end-0 translate-middle "
+        id="back-top-btn"><i class="bi bi-arrow-up text-warning h1"></i></a>
+
+
+    <!-- Enable main.js scripts -->
+    <script src="../main.js"></script>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
