@@ -81,6 +81,11 @@ aside::-webkit-scrollbar {
     display: none;
 }
 
+.nav-tabs .nav-link.active{
+    background-color: rgba(0, 66, 37, 0.3);
+    color: #004225;
+}
+
 
 /* --- less than lg screens--- */
 @media screen and (max-width: 991px) {
@@ -121,4 +126,20 @@ aside::-webkit-scrollbar {
         margin-left: auto;
     }
 
+div.dogs-card> img{
+    max-width: 100% !important;
+}
+
+div.dogs-card + a{
+    background-color: rgba(245, 245, 220, 0.7);
+    position: absolute;
+    right: 0;
+    top: 5rem;
+}
+}
+
+@media screen and (max-width: 375px) {
+    .progress-description{
+        display: none;
+    }
 }

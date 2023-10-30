@@ -79,7 +79,7 @@
     <main class="bg-dark pb-3 ">
         <div class="row row-cols-1 row-cols-md-2 justify-content-end container-fluid">
             <aside class="col position-sticky bg-light overflow-scroll my-4 rounded order-last order-md-first"
-                style=" top: 0; height: 100dvh;">
+                style=" top: 0; height: 100dvh; ">
 
                 <!-- search Box  -->
                 <div class="d-flex flex-column justify-content-around mt-3">
@@ -116,8 +116,30 @@
                                 <div id="protectiveness-collapse" class="accordion-collapse collapse"
                                     aria-labelledby="filter-protectiveness">
                                     <div class="accordion-body bg-light p-1">
-                                        <input class="form-range" type="range" name="shedding" id="shedding" min="1"
-                                            max="5" step="1">
+                                        <!-- <input class="form-range" type="range" name="shedding" id="shedding" min="1"
+                                            max="5" step="1"> -->
+                                            <div class="d-flex-flex-wrap">
+                                                <div class="form-check">
+                                                    <input type="checkbox" name="mildly Protective" id="mildly" class="form-check-inpute">
+                                                    <lable class="form-check-lable small" for="mildly">Mildly Protective</lable>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input type="checkbox" name="moderateky" id="moderateky" class="form-check-inpute">
+                                                    <lable class="form-check-lable small" for="moderateky">Moderately Protective</lable>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input type="checkbox" name="guard" id="guard" class="form-check-inpute">
+                                                    <lable class="form-check-lable small" for="guard">Guarding Instincts</lable>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input type="checkbox" name="protective" id="protective" class="form-check-inpute">
+                                                    <lable class="form-check-lable small" for="protective">Highly Protective</lable>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input type="checkbox" name="soProtective" id="soProtective" class="form-check-inpute">
+                                                    <lable class="form-check-lable small" for="soProtective">Extremely Protective</lable>
+                                                </div>
+                                            </div>
                                     </div>
                                 </div>
                             </div>
@@ -127,14 +149,36 @@
                                     <button class="accordion-button collapsed bg-light p-1 text-capitalize" type="button"
                                         data-bs-toggle="collapse" data-bs-target="#shedding-collapse"
                                         aria-expanded="false" aria-controls="shedding-collapse">
-                                        shedding
+                                        shedding level
                                     </button>
                                 </h2>
                                 <div id="shedding-collapse" class="accordion-collapse collapse"
                                     aria-labelledby="filter-shedding">
                                     <div class="accordion-body bg-light p-1">
-                                        <input class="form-range" type="range" name="shedding" id="shedding" min="1"
-                                            max="5" step="1">
+                                        <!-- <input class="form-range" type="range" name="shedding" id="shedding" min="1"
+                                            max="5" step="1"> -->
+                                        <div class="d-flex-flex-wrap">
+                                            <div class="form-check">
+                                                <input type="checkbox" name="infrequent" id="infrequent" class="form-check-inpute">
+                                                <lable class="form-check-lable small" for="infrequent">Infrequent</lable>
+                                            </div>
+                                            <div class="form-check">
+                                                <input type="checkbox" name="seasonal" id="seasonal" class="form-check-inpute">
+                                                <lable class="form-check-lable small" for="seasonal">Seasonal</lable>
+                                            </div>
+                                            <div class="form-check">
+                                                <input type="checkbox" name="frequent" id="frequent" class="form-check-inpute">
+                                                <lable class="form-check-lable small" for="frequent">Frequent</lable>
+                                            </div>
+                                            <div class="form-check">
+                                                <input type="checkbox" name="occasional" id="occasional" class="form-check-inpute">
+                                                <lable class="form-check-lable small" for="occasional">Occasional</lable>
+                                            </div>
+                                            <div class="form-check">
+                                                <input type="checkbox" name="regularly" id="regularly" class="form-check-inpute">
+                                                <lable class="form-check-lable small" for="regularly">Regularly</lable>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -151,8 +195,30 @@
                                 <div id="trainability-collapse" class="accordion-collapse collapse"
                                     aria-labelledby="filter-trainability">
                                     <div class="accordion-body bg-light p-1">
-                                        <input class="form-range" type="range" name="trainability" id="trainability"
-                                            min="1" max="5" step="1">
+                                        <!-- <input class="form-range" type="range" name="trainability" id="trainability"
+                                            min="1" max="5" step="1"> -->
+                                            <div class="d-flex-flex-wrap">
+                                                <div class="form-check">
+                                                    <input type="checkbox" name="stubborn" id="stubborn" class="form-check-inpute">
+                                                    <lable class="form-check-lable small" for="stubborn">May Be Stubborn</lable>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input type="checkbox" name="agreable" id="agreable" class="form-check-inpute">
+                                                    <lable class="form-check-lable small" for="agreable">Agreeable</lable>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input type="checkbox" name="eager" id="eager" class="form-check-inpute">
+                                                    <lable class="form-check-lable small" for="eager">Eager To Please</lable>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input type="checkbox" name="independent" id="independent" class="form-check-inpute">
+                                                    <lable class="form-check-lable small" for="independent">Independent</lable>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input type="checkbox" name="easy" id="easy" class="form-check-inpute">
+                                                    <lable class="form-check-lable small" for="easy">Easy Training</lable>
+                                                </div>
+                                            </div>
                                     </div>
                                 </div>
                             </div>
@@ -163,14 +229,36 @@
                                     <button class="accordion-button collapsed bg-light p-1 text-capitalize" type="button"
                                         data-bs-toggle="collapse" data-bs-target="#energy-collapse"
                                         aria-expanded="false" aria-controls="energy-collapse">
-                                        energy
+                                        Activity level
                                     </button>
                                 </h2>
                                 <div id="energy-collapse" class="accordion-collapse collapse"
                                     aria-labelledby="filter-energy">
                                     <div class="accordion-body bg-light p-1">
-                                        <input class="form-range" type="range" name="energy" id="energy" min="1" max="5"
-                                            step="1">
+                                        <!-- <input class="form-range" type="range" name="energy" id="energy" min="1" max="5"
+                                            step="1"> -->
+                                            <div class="d-flex-flex-wrap">
+                                                <div class="form-check">
+                                                    <input type="checkbox" name="calm" id="calm" class="form-check-inpute">
+                                                    <lable class="form-check-lable small" for="calm">Calm</lable>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input type="checkbox" name="moderate" id="moderate" class="form-check-inpute">
+                                                    <lable class="form-check-lable small" for="moderate">Moderate</lable>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input type="checkbox" name="energetic" id="energetic" class="form-check-inpute">
+                                                    <lable class="form-check-lable small" for="energetic">Energetic</lable>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input type="checkbox" name="exercise" id="exercise" class="form-check-inpute">
+                                                    <lable class="form-check-lable small" for="exercise">Regular Exercise</lable>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input type="checkbox" name="acitively" id="acitively" class="form-check-inpute">
+                                                    <lable class="form-check-lable small" for="acitively">Needs Lots Of Activity</lable>
+                                                </div>
+                                            </div>
                                     </div>
                                 </div>
                             </div>
@@ -180,71 +268,120 @@
                                     <button class="accordion-button collapsed bg-light p-1 text-capitalize" type="button"
                                         data-bs-toggle="collapse" data-bs-target="#barking-collapse"
                                         aria-expanded="false" aria-controls="barking-collapse">
-                                        barking
+                                        barking level
                                     </button>
                                 </h2>
                                 <div id="barking-collapse" class="accordion-collapse collapse"
                                     aria-labelledby="filter-barking">
                                     <div class="accordion-body bg-light p-1">
-                                        <input class="form-range" type="range" name="barking" id="barking" min="1"
-                                            max="5" step="1">
+                                        <!-- <input class="form-range" type="range" name="barking" id="barking" min="1"
+                                            max="5" step="1"> -->
+                                            <div class="d-flex-flex-wrap">
+                                                <div class="form-check">
+                                                    <input type="checkbox" name="necessary" id="necessary" class="form-check-inpute">
+                                                    <lable class="form-check-lable small" for="necessary">When Necessary</lable>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input type="checkbox" name="infrequent" id="infrequent" class="form-check-inpute">
+                                                    <lable class="form-check-lable small" for="infrequent">Infrequent</lable>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input type="checkbox" name="medium" id="medium" class="form-check-inpute">
+                                                    <lable class="form-check-lable small" for="medium">Medium</lable>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input type="checkbox" name="frequent" id="frequent" class="form-check-inpute">
+                                                    <lable class="form-check-lable small" for="frequent">Frequent</lable>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input type="checkbox" name="vocal" id="vocal" class="form-check-inpute">
+                                                    <lable class="form-check-lable small" for="vocal">Likes To Be Vocal</lable>
+                                                </div>
+                                            </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <!-- height -->
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="filter-height">
-                                    <button class="accordion-button collapsed bg-light p-1 text-capitalize" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#height-collapse"
-                                        aria-expanded="false" aria-controls="height-collapse">
-                                        height in inches
-                                    </button>
-                                </h2>
-                                <div id="height-collapse" class="accordion-collapse collapse"
-                                    aria-labelledby="filter-height">
-                                    <div class="accordion-body bg-light p-1">
-                                        <input class="form-range" type="range" name="height" id="height" min="5" max="37"
-                                            step="8">
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- weight -->
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="filter-weight">
-                                    <button class="accordion-button collapsed bg-light p-1 text-capitalize" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#weight-collapse"
-                                        aria-expanded="false" aria-controls="weight-collapse">
-                                        weight in pounds
-                                    </button>
-                                </h2>
-                                <div id="weight-collapse" class="accordion-collapse collapse"
-                                    aria-labelledby="filter-weight">
-                                    <div class="accordion-body bg-light p-1">
-                                        <input class="form-range" type="range" name="weight" id="weight" min="5" max="245"
-                                            step="60">
-                                    </div>
-                                </div>
-                            </div>
                             <!-- life-expectancy -->
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="filter-life-expectancy">
                                     <button class="accordion-button collapsed bg-light p-1 text-capitalize" type="button"
                                         data-bs-toggle="collapse" data-bs-target="#life-expectancy-collapse"
                                         aria-expanded="false" aria-controls="life-expectancy-collapse">
-                                        life expectancy in years
+                                        life expectancy 
                                     </button>
                                 </h2>
                                 <div id="life-expectancy-collapse" class="accordion-collapse collapse"
                                     aria-labelledby="filter-life-expectancy">
-                                    <div class="accordion-body bg-light p-1">
+                                    <!-- <div class="accordion-body bg-light p-1">
                                         <input class="form-range" type="range" name="life-expectancy"
-                                            id="life-expectancy" min="5" max="17" step="3">
+                                            id="life-expectancy" min="5" max="17" step="3"> -->
+                                            <div class="d-flex-flex-wrap">
+                                                <div class="form-check">
+                                                    <input type="checkbox" name="short" id="short" class="form-check-inpute">
+                                                    <lable class="form-check-lable small" for="short">Short Lifespan</lable>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input type="checkbox" name="average" id="average" class="form-check-inpute">
+                                                    <lable class="form-check-lable small" for="average">Average Lifespan</lable>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input type="checkbox" name="long" id="long" class="form-check-inpute">
+                                                    <lable class="form-check-lable small" for="long">Long Lifespan</lable>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input type="checkbox" name="extended-lifespan" id="extended-lifespan" class="form-check-inpute">
+                                                    <lable class="form-check-lable small" for="extended-lifespan">Extended Lifespan</lable>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input type="checkbox" name="exeptional" id="exeptional" class="form-check-inpute">
+                                                    <lable class="form-check-lable small" for="exeptional">Exceptional Lifespan</lable>
+                                                </div>
+                                            </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
 
+                            <!-- size -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="filter-height">
+                                    <button class="accordion-button collapsed bg-light p-1 text-capitalize" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#height-collapse"
+                                        aria-expanded="false" aria-controls="height-collapse">
+                                        size
+                                    </button>
+                                </h2>
+                                <div id="height-collapse" class="accordion-collapse collapse"
+                                    aria-labelledby="filter-height">
+                                    <div class="accordion-body bg-light p-1">
+                                        <!-- <input class="form-range" type="range" name="height" id="height" min="5" max="37"
+                                            step="8"> -->
+                                            <div class="d-flex-flex-wrap">
+                                                <div class="form-check">
+                                                    <input type="checkbox" name="tiny" id="tiny" class="form-check-inpute">
+                                                    <lable class="form-check-lable small" for="tiny">Tiny Terrier</lable>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input type="checkbox" name="small-size" id="small-size" class="form-check-inpute">
+                                                    <lable class="form-check-lable small" for="small-size">Small Stature</lable>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input type="checkbox" name="mediom-size" id="mediom-size" class="form-check-inpute">
+                                                    <lable class="form-check-lable small" for="mediom-size">Medium Build</lable>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input type="checkbox" name="large-size" id="large-size" class="form-check-inpute">
+                                                    <lable class="form-check-lable small" for="large-size">Large Breed</lable>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input type="checkbox" name="giant" id="giant" class="form-check-inpute">
+                                                    <lable class="form-check-lable small" for="giant">Giant Guardian</lable>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
                         <div class="w-100 bg-warning" style="height: 0.1rem;"></div>
                         <div class="d-flex align-items-center justify-content-between mt-1">
                             <input class="btn btn-dark btn-sm" type="submit"></input>
@@ -254,20 +391,20 @@
                     </form>
                 </section>
             </aside>
-            <section class="col" id="breeds" style="min-width: calc(92vw - 15rem);">
+            <section class="col" id="breeds" style="min-width: calc(90vw - 15rem);">
 
                 <!-- dog breed article -->
                 <div class="accordion" id="article-breeds">
                     <div class="accordion-header" id="breeds-header">
-                        <div class="card bg-light mt-4">
+                        <div class="card bg-dark mt-4" style="border: none;">
                             <div class="row g-0">
                                 <div class="col-lg-4 articles-img d-flex"
                                     style=" background-image: url(../../assets/images/Scottish-Terrier-On-White-02.webp); background-size: cover; background-position: center;">
                                     <!-- <a href="" class="nav-link p-1 mt-auto mx-auto">Scottish Terrier</a> -->
                                 </div>
                                 <div class="col-lg-8 mt-auto">
-                                    <!-- <div class="card-heater border-bottom border-dark p-2">Read About</div> -->
-                                    <div class="card-body p-2 text-dark">
+                                    <!-- <div class="card-heater bg-opacity-25-bottom bg-opacity-25-dark p-2">Read About</div> -->
+                                    <div class="card-body p-2 text-secondary">
                                         <h5 class="card-title"> What's a dog breed?
                                         </h5>
                                         <p class="card-text p-0">People have been breeding dogs since prehistoric
@@ -286,7 +423,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="accordion-collapse collapse card bg-light text-dark" id="article-collapse"
+                    <div class="accordion-collapse collapse card bg-dark text-secondary" style="border: none;"   id="article-collapse"
                         data-bs-parent="#article-breeds" aria-labelledby="breeds-header">
                         <div class=" px-3 pt-3 m-0">
                             <p>For thousands of years, humans bred dogs toward the physical and mental traits best
@@ -341,40 +478,40 @@
                             <div class="d-flex flex-wrap flex-sm-nowrap align-items-center">
                                 <span class="small">shedding</span>
                                 <div style="height: 0.6rem; width:100%;"
-                                    class="ms-auto border border-primary rounded-pill w-50">
-                                    <div class="bg-primary rounded-s-pill" style="width: calc(4*20%); height: 100%;">
+                                    class="ms-auto bg-opacity-25 bg-success rounded w-50">
+                                    <div class="bg-success rounded" style="width: calc(4*20%); height: 100%;">
                                     </div>
                                 </div>
                             </div>
                             <div class="d-flex flex-wrap flex-sm-nowrap align-items-center">
                                 <span class="small">protectiveness</span>
                                 <div style="height: 0.6rem; width:100%;"
-                                    class="ms-auto border border-primary rounded-pill w-50">
-                                    <div class="bg-primary rounded-s-pill" style="width: calc(3*20%); height: 100%;">
+                                    class="ms-auto bg-opacity-25 bg-success rounded w-50">
+                                    <div class="bg-success rounded" style="width: calc(3*20%); height: 100%;">
                                     </div>
                                 </div>
                             </div>
                             <div class="d-flex flex-wrap flex-sm-nowrap align-items-center">
                                 <span class="small">trainability</span>
                                 <div style="height: 0.6rem; width:100%;"
-                                    class="ms-auto border border-primary rounded-pill w-50">
-                                    <div class="bg-primary rounded-s-pill" style="width: calc(5*20%); height: 100%;">
+                                    class="ms-auto bg-opacity-25 bg-success rounded w-50">
+                                    <div class="bg-success rounded" style="width: calc(5*20%); height: 100%;">
                                     </div>
                                 </div>
                             </div>
                             <div class="d-flex flex-wrap flex-sm-nowrap align-items-center">
                                 <span class="small">energy</span>
                                 <div style="height: 0.6rem; width:100%;"
-                                    class="ms-auto border border-primary rounded-pill w-50">
-                                    <div class="bg-primary rounded-s-pill" style="width: calc(3*20%); height: 100%;">
+                                    class="ms-auto bg-opacity-25 bg-success rounded w-50">
+                                    <div class="bg-success rounded" style="width: calc(3*20%); height: 100%;">
                                     </div>
                                 </div>
                             </div>
                             <div class="d-flex flex-wrap flex-sm-nowrap align-items-center">
                                 <span class="small">barking</span>
                                 <div style="height: 0.6rem; width:100%;"
-                                    class="ms-auto border border-primary rounded-pill w-50">
-                                    <div class="bg-primary rounded-s-pill" style="width: calc(1*20%); height: 100%;">
+                                    class="ms-auto bg-opacity-25 bg-success rounded w-50">
+                                    <div class="bg-success rounded" style="width: calc(1*20%); height: 100%;">
                                     </div>
                                 </div>
                             </div>
@@ -393,40 +530,40 @@
                             <div class="d-flex flex-wrap flex-sm-nowrap align-items-center">
                                 <span class="small">shedding</span>
                                 <div style="height: 0.6rem; width:100%;"
-                                    class="ms-auto border border-primary rounded-pill w-50">
-                                    <div class="bg-primary rounded-s-pill" style="width: calc(4*20%); height: 100%;">
+                                    class="ms-auto bg-opacity-25 bg-success rounded w-50">
+                                    <div class="bg-success rounded" style="width: calc(4*20%); height: 100%;">
                                     </div>
                                 </div>
                             </div>
                             <div class="d-flex flex-wrap flex-sm-nowrap align-items-center">
                                 <span class="small">protectiveness</span>
                                 <div style="height: 0.6rem; width:100%;"
-                                    class="ms-auto border border-primary rounded-pill w-50">
-                                    <div class="bg-primary rounded-s-pill" style="width: calc(3*20%); height: 100%;">
+                                    class="ms-auto bg-opacity-25 bg-success rounded w-50">
+                                    <div class="bg-success rounded" style="width: calc(3*20%); height: 100%;">
                                     </div>
                                 </div>
                             </div>
                             <div class="d-flex flex-wrap flex-sm-nowrap align-items-center">
                                 <span class="small">trainability</span>
                                 <div style="height: 0.6rem; width:100%;"
-                                    class="ms-auto border border-primary rounded-pill w-50">
-                                    <div class="bg-primary rounded-s-pill" style="width: calc(5*20%); height: 100%;">
+                                    class="ms-auto bg-opacity-25 bg-success rounded w-50">
+                                    <div class="bg-success rounded" style="width: calc(5*20%); height: 100%;">
                                     </div>
                                 </div>
                             </div>
                             <div class="d-flex flex-wrap flex-sm-nowrap align-items-center">
                                 <span class="small">energy</span>
                                 <div style="height: 0.6rem; width:100%;"
-                                    class="ms-auto border border-primary rounded-pill w-50">
-                                    <div class="bg-primary rounded-s-pill" style="width: calc(3*20%); height: 100%;">
+                                    class="ms-auto bg-opacity-25 bg-success rounded w-50">
+                                    <div class="bg-success rounded" style="width: calc(3*20%); height: 100%;">
                                     </div>
                                 </div>
                             </div>
                             <div class="d-flex flex-wrap flex-sm-nowrap align-items-center">
                                 <span class="small">barking</span>
                                 <div style="height: 0.6rem; width:100%;"
-                                    class="ms-auto border border-primary rounded-pill w-50">
-                                    <div class="bg-primary rounded-s-pill" style="width: calc(1*20%); height: 100%;">
+                                    class="ms-auto bg-opacity-25 bg-success rounded w-50">
+                                    <div class="bg-success rounded" style="width: calc(1*20%); height: 100%;">
                                     </div>
                                 </div>
                             </div>
@@ -445,40 +582,40 @@
                             <div class="d-flex flex-wrap flex-sm-nowrap align-items-center">
                                 <span class="small">shedding</span>
                                 <div style="height: 0.6rem; width:100%;"
-                                    class="ms-auto border border-primary rounded-pill w-50">
-                                    <div class="bg-primary rounded-s-pill" style="width: calc(4*20%); height: 100%;">
+                                    class="ms-auto bg-opacity-25 bg-success rounded w-50">
+                                    <div class="bg-success rounded" style="width: calc(4*20%); height: 100%;">
                                     </div>
                                 </div>
                             </div>
                             <div class="d-flex flex-wrap flex-sm-nowrap align-items-center">
                                 <span class="small">protectiveness</span>
                                 <div style="height: 0.6rem; width:100%;"
-                                    class="ms-auto border border-primary rounded-pill w-50">
-                                    <div class="bg-primary rounded-s-pill" style="width: calc(3*20%); height: 100%;">
+                                    class="ms-auto bg-opacity-25 bg-success rounded w-50">
+                                    <div class="bg-success rounded" style="width: calc(3*20%); height: 100%;">
                                     </div>
                                 </div>
                             </div>
                             <div class="d-flex flex-wrap flex-sm-nowrap align-items-center">
                                 <span class="small">trainability</span>
                                 <div style="height: 0.6rem; width:100%;"
-                                    class="ms-auto border border-primary rounded-pill w-50">
-                                    <div class="bg-primary rounded-s-pill" style="width: calc(5*20%); height: 100%;">
+                                    class="ms-auto bg-opacity-25 bg-success rounded w-50">
+                                    <div class="bg-success rounded" style="width: calc(5*20%); height: 100%;">
                                     </div>
                                 </div>
                             </div>
                             <div class="d-flex flex-wrap flex-sm-nowrap align-items-center">
                                 <span class="small">energy</span>
                                 <div style="height: 0.6rem; width:100%;"
-                                    class="ms-auto border border-primary rounded-pill w-50">
-                                    <div class="bg-primary rounded-s-pill" style="width: calc(3*20%); height: 100%;">
+                                    class="ms-auto bg-opacity-25 bg-success rounded w-50">
+                                    <div class="bg-success rounded" style="width: calc(3*20%); height: 100%;">
                                     </div>
                                 </div>
                             </div>
                             <div class="d-flex flex-wrap flex-sm-nowrap align-items-center">
                                 <span class="small">barking</span>
                                 <div style="height: 0.6rem; width:100%;"
-                                    class="ms-auto border border-primary rounded-pill w-50">
-                                    <div class="bg-primary rounded-s-pill" style="width: calc(1*20%); height: 100%;">
+                                    class="ms-auto bg-opacity-25 bg-success rounded w-50">
+                                    <div class="bg-success rounded" style="width: calc(1*20%); height: 100%;">
                                     </div>
                                 </div>
                             </div>
@@ -497,40 +634,40 @@
                             <div class="d-flex flex-wrap flex-sm-nowrap align-items-center">
                                 <span class="small">shedding</span>
                                 <div style="height: 0.6rem; width:100%;"
-                                    class="ms-auto border border-primary rounded-pill w-50">
-                                    <div class="bg-primary rounded-s-pill" style="width: calc(4*20%); height: 100%;">
+                                    class="ms-auto bg-opacity-25 bg-success rounded w-50">
+                                    <div class="bg-success rounded" style="width: calc(4*20%); height: 100%;">
                                     </div>
                                 </div>
                             </div>
                             <div class="d-flex flex-wrap flex-sm-nowrap align-items-center">
                                 <span class="small">protectiveness</span>
                                 <div style="height: 0.6rem; width:100%;"
-                                    class="ms-auto border border-primary rounded-pill w-50">
-                                    <div class="bg-primary rounded-s-pill" style="width: calc(3*20%); height: 100%;">
+                                    class="ms-auto bg-opacity-25 bg-success rounded w-50">
+                                    <div class="bg-success rounded" style="width: calc(3*20%); height: 100%;">
                                     </div>
                                 </div>
                             </div>
                             <div class="d-flex flex-wrap flex-sm-nowrap align-items-center">
                                 <span class="small">trainability</span>
                                 <div style="height: 0.6rem; width:100%;"
-                                    class="ms-auto border border-primary rounded-pill w-50">
-                                    <div class="bg-primary rounded-s-pill" style="width: calc(5*20%); height: 100%;">
+                                    class="ms-auto bg-opacity-25 bg-success rounded w-50">
+                                    <div class="bg-success rounded" style="width: calc(5*20%); height: 100%;">
                                     </div>
                                 </div>
                             </div>
                             <div class="d-flex flex-wrap flex-sm-nowrap align-items-center">
                                 <span class="small">energy</span>
                                 <div style="height: 0.6rem; width:100%;"
-                                    class="ms-auto border border-primary rounded-pill w-50">
-                                    <div class="bg-primary rounded-s-pill" style="width: calc(3*20%); height: 100%;">
+                                    class="ms-auto bg-opacity-25 bg-success rounded w-50">
+                                    <div class="bg-success rounded" style="width: calc(3*20%); height: 100%;">
                                     </div>
                                 </div>
                             </div>
                             <div class="d-flex flex-wrap flex-sm-nowrap align-items-center">
                                 <span class="small">barking</span>
                                 <div style="height: 0.6rem; width:100%;"
-                                    class="ms-auto border border-primary rounded-pill w-50">
-                                    <div class="bg-primary rounded-s-pill" style="width: calc(1*20%); height: 100%;">
+                                    class="ms-auto bg-opacity-25 bg-success rounded w-50">
+                                    <div class="bg-success rounded" style="width: calc(1*20%); height: 100%;">
                                     </div>
                                 </div>
                             </div>
@@ -541,7 +678,7 @@
 
 
                 <!-- <div class="text-capitalize text-secondary d-flex flex-column align-items-center">
-                    <img class="img-fluid rounded-pill " src="https://api-ninjas.com/images/dogs/golden_retriever.jpg" alt="golden_retriever">
+                    <img class="img-fluid rounded " src="https://api-ninjas.com/images/dogs/golden_retriever.jpg" alt="golden_retriever">
                     <p class="display-6 text-center">Golden Retriever</p>
                     <dl class="row row-cols-2">
                         <dt class="col col-sm-6 text-end">good with children</dt>
@@ -656,7 +793,7 @@
     <!-- Back To Top Button -->
     <!-- first method -->
     <a href="#"
-        class="bg-dark btn bg-opacity-50 border-2 border-warning rounded-circle position-fixed bottom-0 end-0 translate-middle "
+        class="bg-dark btn bg-opacity-50 bg-opacity-25-2 bg-opacity-25-warning rounded-circle position-fixed bottom-0 end-0 translate-middle border-warning border-2 "
         id="back-top-btn"><i class="bi bi-arrow-up text-warning h1"></i></a>
 
 
